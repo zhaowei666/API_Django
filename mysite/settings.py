@@ -129,7 +129,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'hello'
+    'hello',
+    'game_tool'
 ]
 
 
