@@ -12,21 +12,27 @@ import json
 
 @csrf_exempt
 def create_room(request):
+    print 'a'
     character_dict = json.loads(request.GET.get('characters'))
+    print character_dict
     characters = []
     for character in character_dict:
-        for i in range(character_dict[character]):
+        try:
+            number_character = int(character_dict[character])
+        except:
+            return HttpResponse('Data is formatted well', status=500)
+        for i in range(number_character):
             characters.append(character)
     is_new_room = False
     while not is_new_room:
         is_new_room = True
         room_number = str(random.randint(1000, 9999))
-        #Room.objects.create(number=room_number, characters=json.dumps(characters), remaining_characters=json.dumps(characters))
         try:
             Room.objects.create(number=room_number, characters=json.dumps(characters), remaining_characters=json.dumps(characters))
         except:
             is_new_room = False
     res = {'room': room_number}
+    print res
     return JsonResponse(res, status=200)
 
 
