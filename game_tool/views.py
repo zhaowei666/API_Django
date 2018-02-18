@@ -20,7 +20,7 @@ def create_room(request):
         try:
             number_character = int(character_dict[character])
         except:
-            return HttpResponse('Data is formatted well', status=500)
+            return HttpResponse('Data is formatted well', status=400)
         for i in range(number_character):
             characters.append(character)
     is_new_room = False
@@ -43,24 +43,39 @@ def draw_character(request):
 
     rooms = Room.objects.filter(number=room_number)
     if not rooms:
-        return HttpResponse('Room Not Found', status='406')
+        return HttpResponse('Room Not Found', status=400)
     if len(rooms) > 1:
-        return HttpResponse('Room Not Found', status='406')
+        return HttpResponse('Room Not Found', status=400)
     room = rooms[0]
 
-    player = Player.objects.filter(name=player_name).first()
-    if not player:
-        Player.objects.create(name=player_name, room=room)
-    else:
+    players = Player.objects.filter(name=player_name)
+    if players:
+        print 'existing player'
+        player = players[0]
         if player.room == room:
-            res = {'character': player.character}
+            "got card before"
+            if player.character:
+                res = {'character': player.character}
+            else:
+                return HttpResponse('Bad request', status=400)
             return JsonResponse(res, status=200)
+        else:
+            "new to room"
+            player.room = room
+    else:
+        print 'new player'
+        Player.objects.create(name=player_name, room=room)
+        player = Player.objects.filter(name=player_name).first()
+    print player.name
 
-    characters = json.loads(room.characters)
+    characters = json.loads(room.remaining_characters)
     if not characters:
-        return HttpResponse('No characters left', status='406')
+        res = {'character': 'abc'}
+        return JsonResponse(res, status=202)
     random_int = random.randint(0, len(characters) - 1)
     character = characters[random_int]
+    player.character = character
+    player.save()
     del characters[random_int]
 
     room.remaining_characters = json.dumps(characters)
