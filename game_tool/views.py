@@ -20,7 +20,7 @@ def create_room(request):
         try:
             number_character = int(character_dict[character])
         except:
-            return HttpResponse('Data is formatted well', status=400)
+            return HttpResponse({'error':'Data is not formatted well'}, status=202)
         for i in range(number_character):
             characters.append(character)
     is_new_room = False
@@ -42,10 +42,8 @@ def draw_character(request):
     room_number = request.GET.get('room')
 
     rooms = Room.objects.filter(number=room_number)
-    if not rooms:
-        return HttpResponse('Room Not Found', status=400)
-    if len(rooms) > 1:
-        return HttpResponse('Room Not Found', status=400)
+    if not rooms or len(rooms) > 1:
+        return JsonResponse({'error': 'Room Not Found'}, status=202)
     room = rooms[0]
 
     players = Player.objects.filter(name=player_name)
@@ -57,7 +55,7 @@ def draw_character(request):
             if player.character:
                 res = {'character': player.character}
             else:
-                return HttpResponse('Bad request', status=400)
+                return JsonResponse({'error': 'Bad request'}, status=202)
             return JsonResponse(res, status=200)
         else:
             "new to room"
@@ -70,7 +68,7 @@ def draw_character(request):
 
     characters = json.loads(room.remaining_characters)
     if not characters:
-        res = {'character': 'abc'}
+        res = {'error': 'No cards left in the pool'}
         return JsonResponse(res, status=202)
     random_int = random.randint(0, len(characters) - 1)
     character = characters[random_int]
