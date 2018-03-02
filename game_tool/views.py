@@ -46,19 +46,24 @@ def draw_character(request):
         return JsonResponse({'error': 'Room Not Found'}, status=202)
     room = rooms[0]
 
+    characters = json.loads(room.remaining_characters)
+    if not characters:
+        res = {'error': 'No cards left in the pool'}
+        return JsonResponse(res, status=202)
+
     players = Player.objects.filter(name=player_name)
     if players:
         print 'existing player'
         player = players[0]
         if player.room == room:
-            "got card before"
+            print "got card before"
             if player.character:
                 res = {'character': player.character}
             else:
                 return JsonResponse({'error': 'Bad request'}, status=202)
             return JsonResponse(res, status=200)
         else:
-            "new to room"
+            print "new to room"
             player.room = room
     else:
         print 'new player'
@@ -66,10 +71,6 @@ def draw_character(request):
         player = Player.objects.filter(name=player_name).first()
     print player.name
 
-    characters = json.loads(room.remaining_characters)
-    if not characters:
-        res = {'error': 'No cards left in the pool'}
-        return JsonResponse(res, status=202)
     random_int = random.randint(0, len(characters) - 1)
     character = characters[random_int]
     player.character = character
