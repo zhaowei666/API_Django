@@ -73,6 +73,7 @@ def draw_character(request):
     random_int = random.randint(0, len(characters) - 1)
     character = characters[random_int]
     player.character = character
+    print character
     player.save()
     del characters[random_int]
 
