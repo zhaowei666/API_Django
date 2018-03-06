@@ -26,7 +26,8 @@ SECRET_KEY = '%_%d&&n$eqpyz4_58*ggsy29mvnd^at#*zr2_ha7y=uubcq^5%'
 DEBUG = True
 
 ALLOWED_HOSTS = ['ec2-18-219-184-27.us-east-2.compute.amazonaws.com',
-                 '18.219.184.27'
+                 '18.219.184.27',
+                 'localhost'
                  ]
 
 
@@ -43,7 +44,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'blog',
     'hello',
-    'game_tool'
+    'game_tool',
+    'movie'
 ]
 
 MIDDLEWARE = [

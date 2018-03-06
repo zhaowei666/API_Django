@@ -1,0 +1,502 @@
+[
+    {
+        "text": "A man who doesn't spend time with his family can never be a real man", 
+        "name": "The Godfather", 
+        "year": "1972"
+    }, 
+    {
+        "text": "I'm as mad as hell and I'm not gonna take this anymore!", 
+        "name": "Network", 
+        "year": "1976"
+    }, 
+    {
+        "text": "Champagne for my real friends, real pain for my sham friends!", 
+        "name": "25th Hour", 
+        "year": "2002"
+    }, 
+    {
+        "text": "If you think of yourself as funny, you become tragic.", 
+        "name": "Minnie and Moskowitz", 
+        "year": "1971"
+    }, 
+    {
+        "text": "As far back as I can remember, I always wanted to be a gangster", 
+        "name": "Goodfellas", 
+        "year": "1990"
+    }, 
+    {
+        "text": "What we've got here is ... failure to communicate", 
+        "name": "Cool Hand Luke", 
+        "year": "1967"
+    }, 
+    {
+        "text": "You don't make up for your sins in church. You do it in the streets", 
+        "name": "Mean Streets", 
+        "year": "1973"
+    }, 
+    {
+        "text": "I was a better man with you, as a woman... than I ever was with a woman, as a man.", 
+        "name": "Tootsie", 
+        "year": "1982"
+    }, 
+    {
+        "text": "Madness! Madness!", 
+        "name": "The Bridge on the River Kwai", 
+        "year": "1957"
+    }, 
+    {
+        "text": "After fifteen minutes I wanted to marry her, and after half an hour I completely gave up the idea of stealing her purse.", 
+        "name": "Take the Money and Run", 
+        "year": "1969"
+    }, 
+    {
+        "text": "Not only are you rich, but you want to be loved as if you are poor.", 
+        "name": "Children of Paradise", 
+        "year": "1945"
+    }, 
+    {
+        "text": "Is it safe?", 
+        "name": "Marathon Man", 
+        "year": "1976"
+    }, 
+    {
+        "text": "You get some gorgeous eyes, d'you know...", 
+        "name": "Port of Shadows", 
+        "year": "1938"
+    }, 
+    {
+        "text": "I know who I am!", 
+        "name": "Angel Heart", 
+        "year": "1987"
+    }, 
+    {
+        "text": "Paris is small for those who share so great a passion as ours.", 
+        "name": "Children of Paradise", 
+        "year": "1945"
+    }, 
+    {
+        "text": "You were a tomato! A tomato doesn't have a logic, a tomato can't move!", 
+        "name": "Tootsie", 
+        "year": "1982"
+    }, 
+    {
+        "text": "Don Corleone", 
+        "name": "The Godfather", 
+        "year": "1972"
+    }, 
+    {
+        "text": "There is something very important we need to do as soon as possible.\" \"What's that?\" \"Fuck!", 
+        "name": "Eyes Wide Shut", 
+        "year": "1999"
+    }, 
+    {
+        "text": "I love you. I've loved you since the first moment I saw you. I guess maybe I've even loved you before I saw you.", 
+        "name": "A Place in the Sun", 
+        "year": "1951"
+    }, 
+    {
+        "text": "When you side with a man, you stay with him. And if you can't do that, you're like some animal, you're finished.", 
+        "name": "The Wild Bunch", 
+        "year": "1969"
+    }, 
+    {
+        "text": "I want that you tell me... was she feeble-minded? My mother! Was she feeble-minded? Was she?", 
+        "name": "Judgment at Nuremberg", 
+        "year": "1961"
+    }, 
+    {
+        "text": "You're out of order! You're out of order! The whole trial is out of order! They're out of order!", 
+        "name": "...and justice for all.", 
+        "year": "1979"
+    }, 
+    {
+        "text": "Remember when you was a kid and you would spend the whole year waiting for summer vacation and when it finally came it would fly by just like that? It's funny, Jimmy, life has a way of flying by faster than any old summer vacation really fucking does.", 
+        "name": "Things to Do in Denver When You're Dead", 
+        "year": "1995"
+    }, 
+    {
+        "text": "Time. Time. What is time? Swiss manufacture it. French hoard it. Italians squander it. Americans say it is money. Hindus say it does not exist. Do you know what I say? I say time is a crook.\" (O", 
+        "name": "Beat the Devil", 
+        "year": "1953"
+    }, 
+    {
+        "text": "Eddie, you're a born loser", 
+        "name": "The Hustler", 
+        "year": "1961"
+    }, 
+    {
+        "text": "Forget about it", 
+        "name": "Donnie Brasco", 
+        "year": "1997"
+    }, 
+    {
+        "text": "Once you start compromising your thoughts, you're a candidate for mediocrity", 
+        "name": "Biloxi Blues", 
+        "year": "1988"
+    }, 
+    {
+        "text": "You sho' is ugly!", 
+        "name": "The Color Purple", 
+        "year": "1985"
+    }, 
+    {
+        "text": "Why don't you squeeze a watermelon out of the hole of an opening of a lemon and see how hot you look?", 
+        "name": "Look Who's Talking", 
+        "year": "1989"
+    }, 
+    {
+        "text": "It ain't about how hard ya hit. It's about how hard you can get it and keep moving forward. How much you can take and keep moving forward. That's how winning is done!", 
+        "name": "Rocky Balboa", 
+        "year": "2006"
+    }, 
+    {
+        "text": "I'll remember you, honey. You're the one that got away", 
+        "name": "Hud", 
+        "year": "1963"
+    }, 
+    {
+        "text": "I'm Godzilla! You are JAPAN!", 
+        "name": "Things to Do in Denver When You're Dead", 
+        "year": "1995"
+    }, 
+    {
+        "text": "Merciful death, how you love your precious guilt", 
+        "name": "Interview with the Vampire: The Vampire Chronicles", 
+        "year": "1994"
+    }, 
+    {
+        "text": "In Switzerland they had brotherly love - they had 500 years of democracy and peace, and what did that produce? The cuckoo clock.", 
+        "name": "The Third Man", 
+        "year": "1949"
+    }, 
+    {
+        "text": "You are the greatest lover I've ever had.\" \"Well, I practice a lot when I'm alone.", 
+        "name": "Love and Death", 
+        "year": "1975"
+    }, 
+    {
+        "text": "Elaaaaaaine! Elaaaaaaine!", 
+        "name": "The Graduate", 
+        "year": "1967"
+    }, 
+    {
+        "text": "I know, you did send me back to the future, but I'm back -- I'm back FROM the future ...", 
+        "name": "Back to the Future Part II", 
+        "year": "1989"
+    }, 
+    {
+        "text": "You want me to hold the chicken, huh?\" \"I want you to hold it between your knees", 
+        "name": "Five Easy Pieces", 
+        "year": "1970"
+    }, 
+    {
+        "text": "Granny Snuff, ever been snuffed out?", 
+        "name": "Man Bites Dog", 
+        "year": "1992"
+    }, 
+    {
+        "text": "Don't ever take sides with anyone against the Family again. Ever.", 
+        "name": "The Godfather", 
+        "year": "1972"
+    }, 
+    {
+        "text": "The greatest trick the devil ever pulled was convincing the world he didn't exist ... and like that, he's gone\" (Roger 'Verbal", 
+        "name": "The Usual Suspects", 
+        "year": "1995"
+    }, 
+    {
+        "text": "Hey, Solomon, Sliman... Are you guys cousins?", 
+        "name": "The Mad Adventures of 'Rabbi' Jacob", 
+        "year": "1973"
+    }, 
+    {
+        "text": "At least you'll never be a vegetable - even artichokes have hearts", 
+        "name": "Am\u00e9lie", 
+        "year": "2001"
+    }, 
+    {
+        "text": "Once I buried two Arabs in a wall over there... Facing Mecca, of course.", 
+        "name": "Man Bites Dog", 
+        "year": "1992"
+    }, 
+    {
+        "text": "You talkin' to me?", 
+        "name": "Taxi Driver", 
+        "year": "1976"
+    }, 
+    {
+        "text": "You can have my answer now, if you like. My final offer is this: nothing. Not even the fee for the gaming license, which I would appreciate if you would put up personally.", 
+        "name": "The Godfather: Part II", 
+        "year": "1974"
+    }, 
+    {
+        "text": "Solomon, you're Jewish?", 
+        "name": "The Mad Adventures of 'Rabbi' Jacob", 
+        "year": "1973"
+    }, 
+    {
+        "text": "Wait. You dropped your phony dog poo\" \"What phony dog poo?", 
+        "name": "Top Secret!", 
+        "year": "1984"
+    }, 
+    {
+        "text": "It's easier to die for a woman than to find one worth dying for.", 
+        "name": "Ridicule", 
+        "year": "1996"
+    }, 
+    {
+        "text": "Finance is a gun. Politics is knowing when to pull the trigger", 
+        "name": "The Godfather: Part III", 
+        "year": "1990"
+    }, 
+    {
+        "text": "We're judged by the company we keep.\" \"A misjudgment. Judas kept excellent company.", 
+        "name": "Ridicule", 
+        "year": "1996"
+    }, 
+    {
+        "text": "Everybody be cool, this is a robbery!\" \"Any of you fuckin' pricks move and I'll execute every last fucking one of ya ...", 
+        "name": "Pulp Fiction", 
+        "year": "1994"
+    }, 
+    {
+        "text": "Just one more thing Sofie. Is she aware her daughter is alive?", 
+        "name": "Kill Bill: Vol. 1", 
+        "year": "2003"
+    }, 
+    {
+        "text": "Hello. My name is Inigo Montoya. You killed my father. Prepare to die", 
+        "name": "The Princess Bride", 
+        "year": "1987"
+    }, 
+    {
+        "text": "These go to eleven", 
+        "name": "This Is Spinal Tap", 
+        "year": "1984"
+    }, 
+    {
+        "text": "I said 'Bizarre bizarre'? How bizarre. Why would I have said, 'Bizarre, bizarre'?\" \"I assure you, my dear cousin, that you said 'Bizarre bizarre'.\" \"Did I say 'Bizarre'? How bizarre...", 
+        "name": "Bizarre, Bizarre", 
+        "year": "1937"
+    }, 
+    {
+        "text": "Hey, amigo! You know you have a face beautiful enough to be worth $2000?\" \"Yeah, but you don't look like the one who'd collect it.", 
+        "name": "The Good, the Bad and the Ugly", 
+        "year": "1966"
+    }, 
+    {
+        "text": "Yo Adrian, I did it!", 
+        "name": "Rocky II", 
+        "year": "1979"
+    }, 
+    {
+        "text": "Noodles, I slipped", 
+        "name": "Once Upon a Time in America", 
+        "year": "1984"
+    }, 
+    {
+        "text": "You call that a knife? This is a knife!", 
+        "name": "Crocodile Dundee", 
+        "year": "1986"
+    }, 
+    {
+        "text": "I see dead people", 
+        "name": "The Sixth Sense", 
+        "year": "1999"
+    }, 
+    {
+        "text": "See you at the party, Richter!", 
+        "name": "Total Recall", 
+        "year": "1990"
+    }, 
+    {
+        "text": "All right, Mr. De Mille, I'm ready for my close-up", 
+        "name": "Sunset Blvd.", 
+        "year": "1950"
+    }, 
+    {
+        "text": "Fasten your seatbelts, it's going to be a bumpy night", 
+        "name": "All About Eve", 
+        "year": "1950"
+    }, 
+    {
+        "text": "I wish you was a wishing well, so I could tie a bucket to you and sink you", 
+        "name": "The Public Enemy", 
+        "year": "1931"
+    }, 
+    {
+        "text": "Play 'Misty' for me", 
+        "name": "Play Misty for Me", 
+        "year": "1971"
+    }, 
+    {
+        "text": "A floor-rag... How beautiful! I'm so happy!\" \"It's a sweater.", 
+        "name": "Le p\u00e8re No\u00ebl est une ordure", 
+        "year": "1982"
+    }, 
+    {
+        "text": "Why am I Mr. Pink?", 
+        "name": "Reservoir Dogs", 
+        "year": "1992"
+    }, 
+    {
+        "text": "Things would be much as they are now. Perhaps. Except maybe I wouldn't have named our son Elvis.", 
+        "name": "True Romance", 
+        "year": "1993"
+    }, 
+    {
+        "text": "You know...hostility is like a psychic boomerang.", 
+        "name": "Howard the Duck", 
+        "year": "1986"
+    }, 
+    {
+        "text": "Non!", 
+        "name": "Silent Movie", 
+        "year": "1976"
+    }, 
+    {
+        "text": "I can feel that tonight ... I'll make it with her", 
+        "name": "Les bronz\u00e9s font du ski", 
+        "year": "1979"
+    }, 
+    {
+        "text": "Hasta la vista, baby", 
+        "name": "Terminator 2", 
+        "year": "1991"
+    }, 
+    {
+        "text": "Regulators!", 
+        "name": "Young Guns", 
+        "year": "1988"
+    }, 
+    {
+        "text": "Favor gonna kill you faster than a bullet", 
+        "name": "Carlito's Way", 
+        "year": "1993"
+    }, 
+    {
+        "text": "I wanted to destroy something beautiful", 
+        "name": "Fight Club", 
+        "year": "1999"
+    }, 
+    {
+        "text": "Now let me correct you on a couple of things, OK? Aristotle was not Belgian. The central message of Buddhism is not \"Every man for himself.\" And the London Underground is not a political movement.", 
+        "name": "A Fish Called Wanda", 
+        "year": "1988"
+    }, 
+    {
+        "text": "They do taste home-made! Hand-made, and rolled under the armpits.", 
+        "name": "Le p\u00e8re No\u00ebl est une ordure", 
+        "year": "1982"
+    }, 
+    {
+        "text": "Remember who you are", 
+        "name": "The Lion King", 
+        "year": "1994"
+    }, 
+    {
+        "text": "But this ship can't sink!\" \"She's made of iron, sir! I assure you, she can... and she will. It is a mathematical certainty.", 
+        "name": "Titanic", 
+        "year": "1997"
+    }, 
+    {
+        "text": "Bingo!", 
+        "name": "The Naked Gun: From the Files of Police Squad!", 
+        "year": "1988"
+    }, 
+    {
+        "text": "Look Bernard... I think you and I have the same problem: the point is that we cannot really rely on our looks, especially you. So let me give you a piece of advice: forget you don't stand a chance, and just go for it! Who knows, it might work out of a missunderstanding!", 
+        "name": "Les bronz\u00e9s font du ski", 
+        "year": "1979"
+    }, 
+    {
+        "text": "I hate to speak ill of people. Such a nice person indeed!", 
+        "name": "Le p\u00e8re No\u00ebl est une ordure", 
+        "year": "1982"
+    }, 
+    {
+        "text": "Nuskat Muss! Nuskat Muss, Herr Muller!", 
+        "name": "The Restaurant", 
+        "year": "1966"
+    }, 
+    {
+        "text": "Atmosphere? Atmosphere? Do I look like an atmosphere?", 
+        "name": "H\u00f4tel du Nord", 
+        "year": "1938"
+    }, 
+    {
+        "text": "Have you ever seen a grown man naked?", 
+        "name": "Airplane!", 
+        "year": "1980"
+    }, 
+    {
+        "text": "We're both part of the same hypocrisy, senator, but never think it applies to my family.", 
+        "name": "The Godfather: Part II", 
+        "year": "1974"
+    }, 
+    {
+        "text": "They was giving me ten thousand watts a day, you know, and I'm hot to trot! The next woman takes me on's gonna light up like a pinball machine and pay off in silver dollars!", 
+        "name": "One Flew Over the Cuckoo's Nest", 
+        "year": "1975"
+    }, 
+    {
+        "text": "You owe me MONEY!", 
+        "name": "The Hustler", 
+        "year": "1961"
+    }, 
+    {
+        "text": "After all, tomorrow is another day\" (Scarlett O", 
+        "name": "Gone with the Wind", 
+        "year": "1939"
+    }, 
+    {
+        "text": "A man's got to know his limitations", 
+        "name": "Magnum Force", 
+        "year": "1973"
+    }, 
+    {
+        "text": "Adriaaaaaaaaaaan!", 
+        "name": "Rocky", 
+        "year": "1976"
+    }, 
+    {
+        "text": "Well, there wasn't enough time, Michael. There wasn't enough time\" \"We'll get there, Pop. We'll get there", 
+        "name": "The Godfather", 
+        "year": "1972"
+    }, 
+    {
+        "text": "Party's over!", 
+        "name": "Braindead", 
+        "year": "1992"
+    }, 
+    {
+        "text": "Run Forrest, Run!", 
+        "name": "Forrest Gump", 
+        "year": "1994"
+    }, 
+    {
+        "text": "Althoooooough... I HAVE developed a greater appreciation for the female version of the human anatomy... ARROOOOO!", 
+        "name": "Howard the Duck", 
+        "year": "1986"
+    }, 
+    {
+        "text": "Let me be frank!\" \"Can I still be Garth?", 
+        "name": "Wayne's World 2", 
+        "year": "1993"
+    }, 
+    {
+        "text": "I'm more man than you'll ever be and more woman than you'll ever get", 
+        "name": "Car Wash", 
+        "year": "1976"
+    }, 
+    {
+        "text": "Well, nobody's perfect", 
+        "name": "Some Like It Hot", 
+        "year": "1959"
+    }, 
+    {
+        "text": "Wait a minute. I'm the leader, I say when it's the end ... It's the end.", 
+        "name": "The AristoCats", 
+        "year": "1970"
+    }
+]
