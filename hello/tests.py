@@ -7,7 +7,8 @@ import re
 
 # Create your tests here.
 
-class HelloTestCase(TestCase):
+
+class HelloTestCases(TestCase):
     def test_say_hello(self):
         response = self.client.get('/hello/')
         self.assertEqual(response.status_code, 200)
