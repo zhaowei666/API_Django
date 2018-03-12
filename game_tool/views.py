@@ -5,12 +5,14 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Room, Player
+from .decorators import api_key_required
 import random
 import json
 # Create your views here.
 
 
 @csrf_exempt
+@api_key_required
 def create_room(request):
     print 'a'
     character_dict = json.loads(request.GET.get('characters'))
@@ -37,6 +39,7 @@ def create_room(request):
 
 
 @csrf_exempt
+@api_key_required
 def draw_character(request):
     player_name = request.GET.get('name')
     room_number = request.GET.get('room')
