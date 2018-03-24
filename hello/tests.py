@@ -12,13 +12,12 @@ class HelloTestCases(TestCase):
     def test_say_hello(self):
         response = self.client.get('/hello/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.content, 'Hello Tianshu')
 
     def test_current_time(self):
         response = self.client.get('/hello/time')
         self.assertEqual(response.status_code, 200)
-        pattern = 'It is now (\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})'
-        re_result = re.findall(pattern, response.content)
+        pattern = r'It is now (\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})'
+        re_result = re.findall(pattern, response.content.decode('utf-8'))
         time_list = re_result[0]
         [year, month, day, hour, minute, second] = [int(x) for x in time_list]
         response_ts = float(datetime.datetime(year, month, day, hour, minute, second).strftime('%s'))

@@ -12,7 +12,7 @@ This Django project provides RESTful API support to my website
 `pip install --upgrade pip`
 `pip install virtualenv`
 ##### Initialize virtualenv
-`virtualenv env`
+`virtualenv -p python3 env`
 `source env/bin/activate`
 ##### Install libraries
 `pip install -r requirements.txt`

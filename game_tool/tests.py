@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.test import TestCase
+from .decorators import API_KEY
 import json
 
 # Create your tests here.
@@ -13,10 +14,10 @@ class GameToolTestCases(TestCase):
             'seer': 1,
             'witch': 1
         }
-        response = self.client.get('/game_tool/create_room?characters={}'.format(json.dumps(characters)))
-        print '***********~~~~~~~~~~~~'
-        print response.content
-        print '@@@@@@@@@@'
+        response = self.client.get('/game_tool/create_room', {'characters': json.dumps(characters), 'api_key': API_KEY})
+        print('~~~~~~~~')
+        print(response.content)
+        print('@@@@@@@@')
         room_number = json.loads(response.content)['room']
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(room_number), 4)
@@ -29,29 +30,34 @@ class GameToolTestCases(TestCase):
             'seer': 1,
             'witch': 1
         }
-        response = self.client.get('/game_tool/create_room?characters={}'.format(json.dumps(characters)))
+        response = self.client.get('/game_tool/create_room', {'characters': json.dumps(characters), 'api_key': API_KEY})
         room_number = json.loads(response.content)['room']
 
         # draw first card
-        response = self.client.get('/game_tool/draw_character?name={}&room={}'.format('p1', str(room_number)))
+        response = self.client.get('/game_tool/draw_character',
+                                   {'api_key': API_KEY, 'name': 'p1', 'room': str(room_number)})
         self.assertEqual(response.status_code, 201)
         card1 = json.loads(response.content)['character']
         self.assertTrue(card1 in characters)
 
         # draw second card
-        response = self.client.get('/game_tool/draw_character?name={}&room={}'.format('p2', str(room_number)))
+        response = self.client.get('/game_tool/draw_character',
+                                   {'api_key': API_KEY, 'name': 'p2', 'room': str(room_number)})
         self.assertEqual(response.status_code, 201)
         card2 = json.loads(response.content)['character']
         self.assertTrue(card2 in characters and card2 != card1)
 
         # try to draw a third card which is not in the pool
-        response = self.client.get('/game_tool/draw_character?name={}&room={}'.format('p3', str(room_number)))
+        #response = self.client.get('/game_tool/draw_character?name={}&room={}'.format('p3', str(room_number)))
+        response = self.client.get('/game_tool/draw_character',
+                                   {'api_key': API_KEY, 'name': 'p3', 'room': str(room_number)})
         self.assertEqual(response.status_code, 202)
         error = json.loads(response.content)['error']
         self.assertEqual(error, 'No cards left in the pool')
 
         # check a card that has been drawn before
-        response = self.client.get('/game_tool/draw_character?name={}&room={}'.format('p2', str(room_number)))
+        response = self.client.get('/game_tool/draw_character',
+                                   {'api_key': API_KEY, 'name': 'p2', 'room': str(room_number)})
         self.assertEqual(response.status_code, 200)
 
 

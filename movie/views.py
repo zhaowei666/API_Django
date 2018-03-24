@@ -24,7 +24,7 @@ def quotes(request):
     #.lower.split(' ')
     query_words = [w for w in query if w]
     quote_hits = []
-    print query_words
+    print (query_words)
     # TODO Spelling isoform finding is required
     # TODO Hit ranking (TFIDF)
     for quote in quotes_list:
@@ -37,6 +37,6 @@ def quotes(request):
             quote['score'] = score / len(query_words)
             quote_hits.append(quote)
     quote_hits.sort(key=operator.itemgetter('score'), reverse=True)
-    print quote_hits
+    print (quote_hits)
 
     return HttpResponse(json.dumps(quote_hits), status=200)

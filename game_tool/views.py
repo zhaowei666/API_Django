@@ -14,9 +14,9 @@ import json
 @csrf_exempt
 @api_key_required
 def create_room(request):
-    print 'a'
+    print('got request')
     character_dict = json.loads(request.GET.get('characters'))
-    print character_dict
+    print(character_dict)
     characters = []
     for character in character_dict:
         try:
@@ -34,7 +34,7 @@ def create_room(request):
         except:
             is_new_room = False
     res = {'room': room_number}
-    print res
+    print(res)
     return JsonResponse(res, status=200)
 
 
@@ -51,24 +51,24 @@ def draw_character(request):
 
     players = Player.objects.filter(name=player_name)
     if players:
-        print 'existing player'
+        print('existing player')
         player = players[0]
         if player.room == room:
-            print "got card before"
+            print("got card before")
             if player.character:
                 res = {'character': player.character}
             else:
                 return JsonResponse({'error': 'Bad request'}, status=202)
             return JsonResponse(res, status=200)
         else:
-            print "new to room"
+            print("new to room")
             if room.remaining_characters:
                 player.room = room
     else:
-        print 'new player'
+        print('new player')
         Player.objects.create(name=player_name, room=room)
         player = Player.objects.filter(name=player_name).first()
-    print player.name
+    print(player.name)
 
     characters = json.loads(room.remaining_characters)
     if not characters:
@@ -78,7 +78,7 @@ def draw_character(request):
     random_int = random.randint(0, len(characters) - 1)
     character = characters[random_int]
     player.character = character
-    print character
+    print(character)
     player.save()
     del characters[random_int]
 

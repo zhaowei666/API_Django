@@ -2,9 +2,8 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-import datetime
 from django.http import HttpResponse, Http404
-
+import datetime
 # Create your views here.
 
 def say_hello(request):
