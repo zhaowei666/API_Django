@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'dev_db',
         'USER': 'dev_user',
         'PASSWORD': 'dev_password',
-        'HOST': 'postgre-for-flask.cxgukboubuqm.us-east-2.rds.amazonaws.com',
+        'HOST': 'mydbinstance.cxgukboubuqm.us-east-2.rds.amazonaws.com',
         'PORT': '5432'
     }
 }
